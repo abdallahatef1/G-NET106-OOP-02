@@ -92,6 +92,16 @@
                 found.PrintShipment();
             #endregion
 
+            #region  10. Remove one shipment by its tracking code
+            Console.WriteLine();
+            string removeCode = ReadString("Enter Tracking Code to Remove: ");
+            Console.WriteLine();
+            if (center.RemoveShipment(removeCode))
+                Console.WriteLine("Shipment Removed Successfully.");
+            else
+                Console.WriteLine("Shipment not found.");
+            #endregion
+
         }
         static string ReadString(string prompt)
         {
