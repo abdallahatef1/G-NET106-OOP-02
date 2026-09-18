@@ -102,6 +102,12 @@
                 Console.WriteLine("Shipment not found.");
             #endregion
 
+            #region 11. Print the remaining shipments
+            Console.WriteLine();
+            Console.WriteLine("Remaining Shipments");
+            center.PrintAllShipments();
+            #endregion
+
         }
         static string ReadString(string prompt)
         {
