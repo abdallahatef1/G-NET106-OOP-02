@@ -81,6 +81,17 @@
 
             #endregion
 
+            #region 9. Search using the tracking-code indexer
+            Console.WriteLine();
+            string searchCode = ReadString("Enter Tracking Code to Search: ");
+            Shipment found = center[searchCode];
+            Console.WriteLine();
+            if (found == null)
+                Console.WriteLine("Shipment not found.");
+            else
+                found.PrintShipment();
+            #endregion
+
         }
         static string ReadString(string prompt)
         {
