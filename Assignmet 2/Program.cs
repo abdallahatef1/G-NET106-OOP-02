@@ -62,6 +62,19 @@
 
             #endregion
 
+            #region  7. Add the shipments to the delivery center
+            Console.WriteLine();
+            Shipment[] all = { standard, express, international };
+            foreach (Shipment s in all)
+            {
+                if (center.AddShipment(s))
+                    Console.WriteLine("Shipment Added Successfully.");
+                else
+                    Console.WriteLine($"Could not add shipment {s.TrackingCode} (the center is full).");
+            }
+
+            #endregion
+
         }
         static string ReadString(string prompt)
         {
