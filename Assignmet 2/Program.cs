@@ -75,6 +75,12 @@
 
             #endregion
 
+            #region  8. Print all shipments
+            Console.WriteLine();
+            center.PrintAllShipments();
+
+            #endregion
+
         }
         static string ReadString(string prompt)
         {
